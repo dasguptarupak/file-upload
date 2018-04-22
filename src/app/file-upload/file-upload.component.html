@@ -1,0 +1,16 @@
+<div>
+    <div>
+        <h1>File Upload</h1>            
+    </div>
+    <div>
+        <input type="file" (change)="onFileSelected($event)"/>            
+    </div>    
+    <div>
+        <button mat-raised-button
+                color="primary"
+                (click)="onUpload()">Upload</button>
+    </div>
+    <div>
+        <mat-progress-bar mode="determinate" [value]="value"></mat-progress-bar>
+    </div>
+</div>
